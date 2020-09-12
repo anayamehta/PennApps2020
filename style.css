@@ -58,3 +58,6 @@ label {
 .spotify{
 	float: right;
 }
+.footer{
+	clear: both;
+}
