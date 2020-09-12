@@ -56,6 +56,8 @@ let playlists = [
  }
 ];
 
+//don't need this stuff right
+/*
 let idVal = ""; 
 let userChoice = "happy";  //get from input form
 for (int i = 0; i < playlists.length; i++) {
@@ -69,4 +71,4 @@ fetch(url)
 .then(function(){
     //all the code we want to do with the response
 })
-.catch(error => console.log(error))
+.catch(error => console.log(error))*/
