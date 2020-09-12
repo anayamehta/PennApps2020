@@ -7,3 +7,18 @@ fetch(url)
     //all the code we want to do with the response
 })
 .catch(error => console.log(error))
+
+window.onload = function(){
+    
+    var submitButton = document.getElementById("submitButton");
+
+    submitButton.addEventListener("click", function(){
+        var spotifyEmbed = document.getElementById("iframe");
+        var album_ID = "2QJmrSgbdM35R67eoGQo4j";
+        spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/album/${album_ID}`);
+    })
+}
+
+
+    
+
