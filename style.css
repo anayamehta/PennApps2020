@@ -4,33 +4,50 @@ body {
 h1 {
 	color: MediumSpringGreen;
 	text-align: center;
-	font-family: Georgia;
+	font-family: gotham, sans-serif;
+	font-style: normal;
+	font-weight: 400;;
 	font-size: 38px;
 }
 h2 {
 	color: SpringGreen;
-	font-family: Georgia;
+	font-family: Proxima Nova;
 	font-size: 24px;
 }
 p {
 	color: White;
-	font-family: Arial Black;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 16px;
 }
 h6 {
 	color: White;
-	font-family: Comic Sans MS;
-	font-size: 18px;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
 }
 h5 {
 	color: White;
 	text-align: center;
-	font-family: Arial Black;
+	font-family: gotham, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 24px;
+}
+h6, p{
+	text-align: center;
 }
 label {
 	color: White;
 	text-align: center;
-	font-family: Algerian;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 18px;
+	
+}
+.sidebar {
+	float: left;
 }
