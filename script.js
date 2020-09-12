@@ -7,11 +7,23 @@ let playlists = [
   mood: "happy"
  },
  {
-  id: 
+  id: "71sb3x5BwKk87d7ZBOoSJY",
+  mood: "sad"
+ },
+ {
+  id: "2mFml8Bws3cnUjPGZQ4Idx",
+  mood: "groovy"
+ },
+ {
+  id: "7L08IETH8EQmm7k4r8rivb",
+  mood: "angry"
+ },
+ {
+  
  }
   
 ]
-let url = `https://api.spotify.com/v1/playlists/{playlist_id}/tracks`
+let url = `https://api.spotify.com/v1/playlists/${playlists[x].id}/tracks`;
 fetch(url)
 .then(response => response.json()) //unpacking the response into .json format
 .then(function(){
