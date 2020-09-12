@@ -51,3 +51,10 @@ label {
 .sidebar {
 	float: left;
 }
+.page {
+	width: 650px;
+	margin: 0 auto;
+}
+.spotify{
+	float: right;
+}
