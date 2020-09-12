@@ -56,8 +56,6 @@ let playlists = [
  }
 ];
 
-//don't need this stuff right
-/*
 let idVal = ""; 
 let userChoice = "happy";  //get from input form
 for (int i = 0; i < playlists.length; i++) {
@@ -65,6 +63,10 @@ for (int i = 0; i < playlists.length; i++) {
      idVal = playlists[i].id; 
   }
 }
+//use idVal to change the embed url
+
+//don't need this stuff right
+/*
 let url = `https://api.spotify.com/v1/playlists/${idVal}/tracks`;
 fetch(url)
 .then(response => response.json()) //unpacking the response into .json format
