@@ -58,11 +58,16 @@ let playlists = [
 
 let idVal = ""; 
 let userChoice = "happy";  //get from input form
-for (int i = 0; i < playlists.length; i++) {
+
+for (var i = 0; i < playlists.length; i++) {
   if (playlists[i].mood.localeCompare(userChoice) == 0) {
      idVal = playlists[i].id; 
   }
 }
+
+//replacement for the for loop above --> javascript is amazing! :)
+let mood = playlists.find(playlist => playlist.mood === userChoice);
+
 //use idVal to change the embed url
 
 //don't need this stuff right
@@ -75,17 +80,19 @@ fetch(url)
 })
 .catch(error => console.log(error))
 
+*/
+
 window.onload = function(){
     
     var submitButton = document.getElementById("submitButton");
 
     submitButton.addEventListener("click", function(){
         var spotifyEmbed = document.getElementById("iframe");
-        var album_ID = "2QJmrSgbdM35R67eoGQo4j";
+        var album_ID = mood.id;
         spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/album/${album_ID}`);
     })
 }
 
-*/
+
     
 
