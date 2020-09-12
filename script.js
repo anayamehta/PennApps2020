@@ -19,11 +19,51 @@ let playlists = [
   mood: "angry"
  },
  {
-  
+  id: "6WLK6LubucscF4ly7qbf7L",
+  mood: "bored"
+ },
+ {
+  id: "0Re47ehyGKxm9z2ztfre9e",
+  mood: "tired"
+ },
+ {
+  id: "0iHf5FaeDgHJdgptRR5xe2",
+  mood: "focused"
+ },
+ {
+  id: "24vORFqVMJn3fvuZ42vYbf",
+  mood: "angsty"
+ },
+ {
+  id: "5hZLn7plSc9JXFVbm3cYy4",
+  mood: "loving"
+ },
+ {
+  id: "0SJKn1U4V6jb1pBvivV4Ck",
+  mood: "confident"
+ },
+ {
+  id: "3sCVaEzyJiop7JnN4Cd71D",
+  mood: "nervous"
+ },
+ {
+  id: "2Q9S9x5k0l6zwMFvrWx23r",
+  mood: "hopeful"
+ },
+ {
+  id: "26KfFNWF3LjCFzjiuk9Y35",
+  mood: "lonely"
  }
-  
-]
-let url = `https://api.spotify.com/v1/playlists/${playlists[x].id}/tracks`;
+];
+
+let idVal = ""; 
+let userChoice = "happy";  //get from input form
+for (int i = 0; i < playlists.length; i++) {
+  if (playlists[i].mood.localeCompare(userChoice) == 0) {
+     idVal = playlists[i].id; 
+  }
+}
+let url = `https://api.spotify.com/v1/playlists/${idVal}/tracks`;
 fetch(url)
 .then(response => response.json()) //unpacking the response into .json format
 .then(function(){
