@@ -4,21 +4,33 @@ body {
 h1 {
 	color: MediumSpringGreen;
 	text-align: center;
-	font-family:
+	font-family: Georgia;
 	font-size: 38px;
 }
 h2 {
 	color: SpringGreen;
-	font-family:
+	font-family: Georgia;
 	font-size: 24px;
 }
 p {
 	color: White;
-	font-family:
-	font-size:
+	font-family: Arial Black;
+	font-size: 16px;
+}
+h6 {
+	color: White;
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+h5 {
+	color: White;
+	text-align: center;
+	font-family: Arial Black;
+	font-size: 24px;
 }
 label {
 	color: White;
-	font-family:
-	font-size:
+	text-align: center;
+	font-family: Algerian;
+	font-size: 18px;
 }
