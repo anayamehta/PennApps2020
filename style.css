@@ -3,13 +3,14 @@ body {
 }
 h1 {
 	color: MediumSpringGreen;
+	text-align: center;
 	font-family:
-	font-size:
+	font-size: 38px;
 }
 h2 {
 	color: SpringGreen;
 	font-family:
-	font-size:
+	font-size: 24px;
 }
 p {
 	color: White;
