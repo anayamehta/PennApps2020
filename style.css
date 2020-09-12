@@ -54,6 +54,8 @@ label {
 .page {
 	width: 650px;
 	margin: 0 auto;
+	padding: 10px 50px 10px 50px; /*top right bottom left*/
+	border: 10px solid MediumSpringGreen;
 }
 .spotify{
 	float: right;
