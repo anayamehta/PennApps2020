@@ -85,6 +85,7 @@ window.onload = function(){
             spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/playlist/${album_ID}`);
             spotifyEmbed.style.display = "block";
             document.getElementById("toReplace").style.display = "none";
+            document.getElementById("picture").style.display = "none";
         } 
         else { 
             console.log("radio button not selected")
