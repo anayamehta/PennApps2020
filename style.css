@@ -50,6 +50,11 @@ label {
 	font-size: 18px;
 	
 }
+button{
+	background-color: White;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+}
 .sidebar {
 	float: left;
 }
