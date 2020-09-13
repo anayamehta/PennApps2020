@@ -9,22 +9,44 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-		<div class='page'>
-        <div>
-            <h1>Mood Music</h1>
-            <p>From the drumbeats of our ancient ancestors to today’s unlimited streaming services, music 
-is an integral part of the human experience. While it is known that music calms you down, reduces your 
-anxiety, evokes memories, and even assists in repairing brain damage, research has now shown that music 
-has a therapeutic effect on the moods of people as well. Whether you're feeling happy or depressed, listening
-to music will always help you feel better.</p>
-            <h6>Upbeat music boosts your mood :) <br> Even sad music can help you feel better <br>
-	    Slow music helps you feel calm and relaxed. <br> Rap and hip-hop make you wanna dance!! <br>
-	    Some songs make you nostalgic...<br>	
-	 <!--<h5><strong><em>Welcome to Mood Music!</em></strong></h5>-->
+      <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html">Mood Music</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="playlists.html">All Playlists</a></li>
+                </ul>
+            </div>
         </div>
+      </nav>
+
+        <div class="content">
+            <h1>Mood Music</h1>
+            <div class="col-sm-6 offset-3">
+                <p>From the drumbeats of our ancient ancestors to today’s unlimited streaming services, music 
+                    is an integral part of the human experience. While it is known that music calms you down, reduces your 
+                    anxiety, evokes memories, and even assists in repairing brain damage, research has now shown that music 
+                    has a therapeutic effect on the moods of people as well. Whether you're feeling happy or depressed, listeing
+                    to music will always help you feel better.</p>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+            <div class="col-sm-4 offset-2">
+                <h6>Upbeat music boosts your mood :) <br> Even sad music can lift up your mood <br>
+                    Slow music helps you feel calm and relaxed. <br> Rap and hip-hop makes you wanna dance!! <br>
+                    Some songs make you nostalgic...<br></h6>	
+            </div>
+            <div class="col-sm-5 align-self-center">
+            <h5><strong><em>Music in itself is healing!</em></strong></h5>
+            </div>
+            </div>
         <br>
         <div class='sidebar'> 
             <h2>What's your current mood?</h2>
@@ -44,6 +66,13 @@ to music will always help you feel better.</p>
             <br>
             <button id="submitButton"> <font size = 3px>Find an album!</font></button>
         </div>
+
+
+        <div>
+            <iframe src="https://open.spotify.com/embed/playlist/6w7KExnFpSHdxfv15S6egq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+     </div>
+        <script src="script.js" ></script>
 
         <div class='spotify'>
             <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
