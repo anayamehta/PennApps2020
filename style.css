@@ -4,14 +4,16 @@ body {
 h1 {
 	color: MediumSpringGreen;
 	text-align: center;
-	font-family: gotham, sans-serif;
+	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 400;;
 	font-size: 38px;
 }
 h2 {
 	color: SpringGreen;
-	font-family: Proxima Nova;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 24px;
 }
 p {
@@ -48,13 +50,37 @@ label {
 	font-size: 18px;
 	
 }
+button{
+	background-color: White;
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+}
 .sidebar {
 	float: left;
 }
 .page {
 	width: 650px;
 	margin: 0 auto;
+	padding: 10px 50px 10px 50px; /*top right bottom left*/
+	border: 10px solid MediumSpringGreen;
 }
 .spotify{
 	float: right;
+}
+.footer{
+	clear: both;
+}
+.navbar {
+	background: mediumspringgreen;
+}
+.navbar-nav li {
+	padding-left: 40px;
+}
+.content {
+	position: relative; 
+	top: 100px; 
+}
+.play {
+	position: relative;
+	top: 100px;
 }
