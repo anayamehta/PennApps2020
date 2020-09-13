@@ -53,20 +53,44 @@ let playlists = [
  {
   id: "26KfFNWF3LjCFzjiuk9Y35",
   mood: "lonely"
+ },
+ {
+    id: "6DEjYFkNZh67HP7R9PSZvv",
+    mood: "test"
  }
 ];
 
-let idVal = ""; 
-let userChoice = "happy";  //get from input form
-
-for (var i = 0; i < playlists.length; i++) {
-  if (playlists[i].mood.localeCompare(userChoice) == 0) {
-     idVal = playlists[i].id; 
-  }
-}
+// let idVal = ""; 
+let userChoice;  //get from input form
 
 //replacement for the for loop above --> javascript is amazing! :)
-let mood = playlists.find(playlist => playlist.mood === userChoice);
+
+window.onload = function(){
+
+    var submitButton = document.getElementById("submitButton");
+
+    submitButton.addEventListener("click", function(){
+
+        var checkRadio = document.querySelector( 
+            'input[name="Current Mood"]:checked'); 
+          
+        if(checkRadio != null) { 
+            userChoice = checkRadio.id;
+            //console.log(userChoice);
+            let mood = playlists.find(playlist => playlist.mood == userChoice);
+            //console.log(mood);
+            var spotifyEmbed = document.getElementById("spotify");
+            var album_ID = mood.id;
+            console.log(album_ID);
+            spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/album/${album_ID}`);
+        } 
+        else { 
+            console.log("radio button not selected")
+        } 
+    })
+}
+
+
 
 //use idVal to change the embed url
 
@@ -82,17 +106,8 @@ fetch(url)
 
 */
 
-window.onload = function(){
-    
-    var submitButton = document.getElementById("submitButton");
-
-    submitButton.addEventListener("click", function(){
-        var spotifyEmbed = document.getElementById("iframe");
-        var album_ID = mood.id;
-        spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/album/${album_ID}`);
-    })
-}
-
-
-    
-
+// for (var i = 0; i < playlists.length; i++) {
+//   if (playlists[i].mood.localeCompare(userChoice) == 0) {
+//      idVal = playlists[i].id; 
+//   }
+// }
