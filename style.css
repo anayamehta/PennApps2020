@@ -54,7 +54,7 @@ button{
 	font-style: normal;
 }
 .sidebar {
-	float: left;
+	float:left;
 }
 .page {
 	width: 650px;
@@ -78,6 +78,9 @@ button{
 .content {
 	position: relative; 
 	top: 100px; 
+}
+#info {
+	text-align: center;
 }
 .play {
 	position: relative;
