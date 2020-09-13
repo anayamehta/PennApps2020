@@ -84,7 +84,7 @@ window.onload = function(){
             console.log(album_ID);
             spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/playlist/${album_ID}`);
             spotifyEmbed.style.display = "block";
-            document.getElementById("toReplace").style.display = "none";
+            document.getElementById("toReplace").style.display = "block";
             document.getElementById("picture").style.display = "none";
         } 
         else { 
