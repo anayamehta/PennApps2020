@@ -83,6 +83,7 @@ window.onload = function(){
             var album_ID = mood.id;
             console.log(album_ID);
             spotifyEmbed.setAttribute("src", `https://open.spotify.com/embed/playlist/${album_ID}`);
+            document.getElementById("song").style.display = "block";
         } 
         else { 
             console.log("radio button not selected")
