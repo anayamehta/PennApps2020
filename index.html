@@ -29,7 +29,7 @@
 
         <div class="content">
             <h1>Mood Music</h1>
-            <div class="col-sm-6 offset-3">
+            <div id="info" class="col-sm-6 offset-3">
                 <p>From the drumbeats of our ancient ancestors to today’s unlimited streaming services, music 
                     is an integral part of the human experience. While it is known that music calms you down, reduces your 
                     anxiety, evokes memories, and even assists in repairing brain damage, research has now shown that music 
@@ -37,15 +37,6 @@
                     to music will always help you feel better.</p>
             </div>
             <hr>
-            <div class="row justify-content-center">
-            <div class="col-sm-4 offset-2">
-                <h6>Upbeat music boosts your mood :) <br> Even sad music can lift up your mood <br>
-                    Slow music helps you feel calm and relaxed. <br> Rap and hip-hop makes you wanna dance!! <br>
-                    Some songs make you nostalgic...<br></h6>	
-            </div>
-            <div class="col-sm-5 align-self-center">
-            </div>
-            </div>
         <br>
         <div class="row">
         <div class='sidebar col-sm-3 offset-3'> 
@@ -67,14 +58,12 @@
             <button id="submitButton"> <font size = 3px>Find an album!</font></button>
         </div>
 
-        <div class='spotify col-sm-4'>
-            <h1 id="toReplace">Keep Calm and Listen to Music!</h1>
-            <iframe src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="spotify" style="display:none"></iframe>
+        <div class='spotify col-sm-4' style="display:none" id="song">
+            <iframe src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="spotify" SameSite="None"></iframe>
         </div>
-	<div id="picture" class="col-sm-4">
+        <div id="picture" class="col-sm-4">
             <img class="img-fluid max-width:100%" src="https://media.wired.com/photos/5cabda11e903a149797c4518/master/w_2560%2Cc_limit/spotify-909238494.jpg">
         </div>
-        
     </div>
         <div class='footer'>
 			<p> <br><br><br> <font color = "#00fa9a"> Our team is excited to show you our website, Mood Music! We had such a great time at PennApps XXI :) </font></p>
