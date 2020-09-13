@@ -25,6 +25,7 @@ p {
 }
 h6 {
 	color: White;
+	text-align: center
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -37,9 +38,6 @@ h5 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
-}
-h6, p{
-	text-align: center;
 }
 label {
 	color: White;
